@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #3174C1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+  }
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
